@@ -19,6 +19,7 @@ RUN dnf makecache fast \
  && dnf -y install \
       ansible \
       sudo \
+      python2-dnf \
  && dnf clean all
 
 # Disable requiretty
